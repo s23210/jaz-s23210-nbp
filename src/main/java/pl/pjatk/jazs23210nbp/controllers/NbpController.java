@@ -20,7 +20,7 @@ public class NbpController {
     }
 
     @GetMapping("/getGoldRate")
-    public ResponseEntity<GoldRate> getGoldRate(@PathVariable Date startDate, @PathVariable Date endDate) {
+    public ResponseEntity<GoldRate> getGoldRate(@PathVariable String startDate, @PathVariable String endDate) {
         return nbpService.getGoldRate(startDate, endDate);
     }
 }

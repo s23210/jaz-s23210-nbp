@@ -9,14 +9,14 @@ import java.util.Date;
 
 @Service
 public class NbpService {
-    private static final String RESOURCE_URL = "http://api.nbp.pl/api/";
+    private static final String RESOURCE_URL = "http://api.nbp.pl/api";
     private final RestTemplate restTemplate;
 
     public NbpService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 
-    public ResponseEntity<GoldRate> getGoldRate(Date startDate, Date endDate) {
-        return restTemplate.getForEntity(RESOURCE_URL + "/cenyzlota/" + startDate +"/" + endDate, GoldRate.class);
+    public ResponseEntity<GoldRate> getGoldRate(String startDate, String endDate) {
+        return restTemplate.getForEntity(RESOURCE_URL + "/cenyzlota/" + startDate +"/" + endDate + "/", GoldRate.class);
     }
 }

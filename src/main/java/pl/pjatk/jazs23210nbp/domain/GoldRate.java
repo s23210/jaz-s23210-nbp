@@ -1,9 +1,7 @@
 package pl.pjatk.jazs23210nbp.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -16,10 +14,10 @@ public class GoldRate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Enumerated(EnumType.STRING)
     private Gold gold;
-    private Date startDate;
-    private Date endDate;
-//get current date and time
+    private String startDate;
+    private String endDate;
 
 
 }
