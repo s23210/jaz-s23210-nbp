@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface GoldRateRepository extends JpaRepository<GoldRate, Integer> {
+    GoldRate getById(Integer id);
 }

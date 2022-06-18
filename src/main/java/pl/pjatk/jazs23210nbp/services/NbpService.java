@@ -4,6 +4,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import pl.pjatk.jazs23210nbp.domain.GoldRate;
+import pl.pjatk.jazs23210nbp.repositories.GoldRateRepository;
 
 import java.util.Date;
 
