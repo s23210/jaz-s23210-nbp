@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 
-import java.net.ConnectException;
-
 @RestControllerAdvice
 public class ExceptionsHandler {
 

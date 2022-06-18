@@ -1,10 +1,6 @@
 package pl.pjatk.jazs23210nbp.domain;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 @Entity
 public class GoldRate {

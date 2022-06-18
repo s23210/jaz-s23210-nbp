@@ -1,6 +1,5 @@
 package pl.pjatk.jazs23210nbp.controllers;
 
-import io.swagger.models.auth.In;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.pjatk.jazs23210nbp.domain.GoldRate;
 import pl.pjatk.jazs23210nbp.services.GoldRateService;
 import pl.pjatk.jazs23210nbp.services.NbpService;
-
-import java.util.Date;
 
 @RestController
 @RequestMapping("/nbp")
